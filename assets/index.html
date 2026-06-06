@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Sizing</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1> Model Box</h1>
+    
+   <section class="boxgit"> <div class="box-sizing">
+        <h2>Content-Box</h2>
+<p>When you set the width or height of an element, it applies only to the content area. Padding and border are added outside of that width and height, which increases the element's total size.</p>
+<h3>Total Size Formula:</h3>
+<p>Total Width = Width + Left Padding +Right Padding +Left Border + Right Border.</p>
+
+    </div>
+    <div class="border-box">
+        <h2>Border-box</h2>
+        <p>Is the alternative CSS box model where padding and borders are included inside the element's specified width and height.</p>
+        <h3>Total Size Formula:</h3>
+        <p>Total Width = Specified  Width (Padding  and Border  are  inside)</p>
+        
+    </div> </section> <hr>
+        <section class="card2">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGFwdG9wfGVufDB8fDB8fHww" alt="laptop" height="180" width="170px">
+        <h2> HP Elitebook 840 G8 Laptop </h2>
+        <p class="card1">HP Elitebook Laptop Generation 11  Model 840 G8 Processor Core i5 Ram 16GB SSD 256GB  <span style="font-family: 'Times New Roman', Times, serif; font-size: 35PX;"> PKR 115,000</span></p>
+        <button> Buy Now</button>
+    </div> </section> <hr>
+   <h1>Part 4: Bonus Challenge</h1>
+<h2 style="color: white;">Experiment 1: content-box</h2>
+<div class="cont">
+    <div class="child"> Child 1</div>
+    <div class="child"> Child 2</div>
+</div>
+<!--  content box  m layout break hogya hai-->
+
+<h2 style="color: white;">Experiment 2: border-box </h2>
+<div class="container">
+    <div class="child1"> Child 1</div>
+    <div class="child1"> Child 2</div>
+</div>
+<!-- border box m layout fit hogya hai -->
+<!-- content-box Experiment 1 m browser element ki total width nikalte waqt width 50% + padding 20px + 20px + border 5px + 5px ko aapas m add karta hai. Is tarah dono boxes ki total width 100% se barh jati hai aur jagah kam hone ki wajah se layout toot jata hai.
+ border-box Experiment 2 mein browser padding aur border ko pehle se tay shuda width (50%) ke andar hi adjust kar deta hai. Is se box ka bahari size perfect 50% hi rehta hai, aur dono boxes 100% ki space mein bilkul sahi fit aa jate hain.-->
+
+
+</body>
+</html>
